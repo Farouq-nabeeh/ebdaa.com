@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.nav-link {
+    color: #4b5563;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #4f46e5;
+}
+
+.dark .nav-link {
+    color: #d1d5db;
+}
+
+.dark .nav-link:hover {
+    color: #818cf8;
+}
+
+.portfolio-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.6s ease;
+}
+
+[data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease;
+}
+
+[data-aos="fade-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dark .portfolio-item img {
+    filter: brightness(0.8);
+    color: black;
+}
+
+.dark .portfolio-item:hover img {
+    filter: brightness(0.6);
+}
